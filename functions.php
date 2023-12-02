@@ -14,4 +14,5 @@ function save_phone_number_to_database($user_id) {
         update_user_meta($user_id, 'user_phone_number', $phone_number);
     }
 }
+
 add_action('woocommerce_save_account_details', 'save_phone_number_to_database');
